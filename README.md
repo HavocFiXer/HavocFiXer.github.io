@@ -1,2 +1,0 @@
-# HavocFiXer.github.io
-Blog

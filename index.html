@@ -1,525 +1,235 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" slick-uniqueid="3">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="keywords" content="Hongfei Xue, 薛鸿飞, USTC, University of Science and Technology of China, 中国科学技术大学, 中科大, Computer Science, CS, 计算机系, UB, State University of New York at Buffalo, University at Buffalo SUNY, 纽约州立大学布法罗分校, 布法罗大学, Computer Science and Engineering, CSE, UNCC, UNC at Charlotte, University of North Carolina at Charlotte, 北卡罗来纳大学夏洛特分校, 北卡夏洛特, CCI, College of Computing and Informatics">
-<meta name="description" content="Hongfei Xue&#39;s Homepage">
-<link rel="stylesheet" href="./stylesheet.css" type="text/css">
-<style type="text/css">
-</style>
-<title>Hongfei Xue - Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hongfei Xue - Assistant Professor of Computer Science at UNCC">
+    <meta name="keywords" content="Hongfei Xue, 薛鸿飞, USTC, University of Science and Technology of China, 中国科学技术大学, 中科大, Computer Science, CS, 计算机系, UB, State University of New York at Buffalo, University at Buffalo SUNY, 纽约州立大学布法罗分校, 布法罗大学, Computer Science and Engineering, CSE, UNCC, UNC at Charlotte, University of North Carolina at Charlotte, 北卡罗来纳大学夏洛特分校, 北卡夏洛特, CCI, College of Computing and Informatics">
+    <title>Hongfei Xue - Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Optional for icons -->
 </head>
+<body class="page-home">
 
-<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Hongfei Xue</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="group.html">Group</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div id="layout-content" style="margin-top:25px">
+    <!-- Profile / portrait -->
+    <section class="hero hero--profile" aria-labelledby="profile-name">
+        <div class="container hero__container">
+            <div class="hero__layout">
+                <figure class="hero__figure">
+                    <div class="hero__frame">
+                        <img src="./hongfei.jpg" alt="Portrait of Hongfei Xue" class="hero__photo" width="320" height="320">
+                    </div>
+                </figure>
+                <div class="hero__body">
+                    <div class="hero__top">
+                        <h1 id="profile-name">Hongfei Xue <span class="name-chinese">(薛鸿飞)</span></h1>
+                        <p class="hero__role-line">Ph.D., Assistant Professor</p>
+                        <p class="hero__affiliation">
+                            <a href="https://cci.charlotte.edu/departments/department-of-computer-science/" target="_blank" rel="noopener noreferrer" class="hero__affiliation-link">Department of Computer Science</a><br>
+                            <a href="https://www.charlotte.edu/" target="_blank" rel="noopener noreferrer" class="hero__affiliation-link">University of North Carolina at Charlotte (UNCC)</a>
+                        </p>
+                    </div>
+                    <div class="hero__bottom">
+                        <div class="hero__meta-block">
+                            <span class="hero__label">Office</span>
+                            <span class="hero__value">Woodward Hall 205A</span>
+                            <span class="hero__label">Address</span>
+                            <span class="hero__value">9201 University City Blvd., Charlotte, NC 28223</span>
+                            <span class="hero__label">Email</span>
+                            <span class="hero__value"><a href="mailto:hongfei.xue@charlotte.edu">hongfei.xue@charlotte.edu</a></span>
+                            <nav class="hero__profile-links" aria-label="Professional profiles">
+                                <a href="https://scholar.google.com/citations?user=1RiEevcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="hero__profile-link">Google Scholar</a>
+                                <a href="https://www.linkedin.com/in/hongfei-xue-81927a75/" target="_blank" rel="noopener noreferrer" class="hero__profile-link">LinkedIn</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<table>
-<tbody>
-  <tr>
-    <td width="39%" valign="top" height="193">
-      <img height="225" id="photo" style="padding: 0pt 30pt 0pt 20pt; float: left; display: inline;" src="./hongfei.jpg">
-    </td>
-    
-    <td width="60%" valign="top" height="193">
-      <b><font face="Times New Roman" size="6">Hongfei Xue</font><font size="6" face="楷体_GB2312"> （薛鸿飞）</font><font face="Times New Roman" size="6"></font></b>
-      <br><br>    
-      <p>          
-          Assistant Professor, Department of Computer Science
-      </p>  
-<!--       <p>          
-          Department of Computer Science
-      </p>   -->
-      <!-- <p>          
-          College of Computing and Informatics (CCI)
-      </p>   -->
-      <p>          
-          University of North Carolina at Charlotte (UNCC)
-      </p>
-      <p>          
-          Office: Woodward Hall 205A, Charlotte, NC 28262
-      </p>
-      <p>          
-          Email: hongfei DOT xue AT charlotte DOT edu
-      </p>
-      <p>          
-          [<a href="https://scholar.google.com/citations?user=1RiEevcAAAAJ&hl=en" target="_blank">Google Scholar</a>] [<a href="https://dblp.org/pid/192/2552.html" target="_blank">DBLP</a>]
-      </p>
-    </td>
-  </tr>
-</tbody>
-</table>
+    <div class="container">
+        
+        <!-- Prospective Students Section -->
+        <section class="section prospective-students callout callout--prospective" aria-labelledby="prospective-heading">
+            <h3 id="prospective-heading" class="callout__title callout__title--prospective">To Prospective Students</h3>
+            <p class="callout__text">I am looking for <strong>self-motivated Ph.D. students</strong> and <strong>research interns</strong>. If you are interested in working with me, feel free to send me your CV. Graduate admission information is available from the <a href="https://cci.charlotte.edu/academics/computer-science/phd-program-cs-track/prior-fall-2005/admissions/" target="_blank" rel="noopener noreferrer">Ph.D. program and admissions</a> page.</p>
+        </section>
 
-<h2 style="color:orangered;">Opening</h2>
-<p style="color:orangered">
-Openings: I am looking for self-motivated Ph.D. students and research interns. If you are interested in working with me, feel free to send me your CV. Graduate admission information can be found <a href="https://cci.charlotte.edu/academics/computer-science/phd-program-cs-track/prior-fall-2005/admissions/" target="_blank">here</a>.
-</p>
+        <!-- About Me Section -->
+        <section class="section about about--home">
+            <h2>About Me</h2>
+            <div class="about__content">
+                <p class="about__lead">Dr. Hongfei Xue is an Assistant Professor of the <a href="https://cci.charlotte.edu/departments/department-of-computer-science/">Department of Computer Science</a> at the <a href="https://www.charlotte.edu/">University of North Carolina at Charlotte</a>.</p>
+                <p>He earned his Ph.D. from the <a href="https://www.buffalo.edu/" target="_blank" rel="noopener noreferrer">State University of New York at Buffalo</a>, jointly supervised by <a href="https://engineering.purdue.edu/~lusu/" target="_blank" rel="noopener noreferrer">Dr. Lu Su</a> and <a href="https://engineering.virginia.edu/faculty/aidong-zhang" target="_blank" rel="noopener noreferrer">Dr. Aidong Zhang</a>. He received his B.S. from the <a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener noreferrer">University of Science and Technology of China (USTC)</a>.</p>
 
-<h2>About me</h2>
-<p style="text-align:justify;">
-Dr. Hongfei Xue is an Assistant Professor of <a href="https://cci.charlotte.edu/departments/department-of-computer-science/">Department of Computer Science</a> at the <a href="https://www.charlotte.edu/">University of North Carolina at Charlotte</a>.
-He obtained the Ph.D. degree at the <a href="https://www.buffalo.edu/" target="_blank">State University of New York at Buffalo</a> jointly supervised by Prof. <a href="https://engineering.purdue.edu/~lusu/" target="_blank">Lu Su</a> and Prof. <a href="https://engineering.virginia.edu/faculty/aidong-zhang" target="_blank">Aidong Zhang</a>.
-Before that, he received his B.S. degree from the <a href="https://www.ustc.edu.cn/" target="_blank">University of Science and Technology of China (USTC)</a>.
-</p>
-<p>
-Dr. Xue's research interests lie in the intersection of <b>Internet of Things</b> and <b>Artificial Intelligence</b>, with an emphasis on building <b>intelligent wireless sensing systems</b>.
-His research focuses on developing algorithms and systems that can intelligently collect, integrate, analyze, and eventually transform the IoT sensory data into useful knowledge that can draw a better understanding of the social and physical world.
-</p>
+                <h3 class="about__subhead">Research</h3>
+                <p>Dr. Xue works at the intersection of the Internet of Things (IoT) and artificial intelligence (AI), with a focus on <strong>intelligent wireless sensing systems</strong>. His research develops algorithms and systems that collect, integrate, and analyze large-scale IoT sensory data, turning it into actionable insight about the physical and social world.</p>
+                <p>A central theme is expanding human sensing capabilities through <strong>generative AI for human motion understanding and synthesis</strong> and <strong>wireless signal generation for realistic simulation</strong>, supporting more robust, scalable, and data-efficient sensing.</p>
+                <p>He also studies <strong>collaborative perception for autonomous driving</strong>—algorithms that let multiple vehicles share information and perceive their surroundings jointly for safer decisions.</p>
+                <p>Additional interests include materials science, especially <strong>crystal structure prediction</strong>, using AI to infer structures from composition and related properties.</p>
+            </div>
+        </section>
 
-<!--    
-<h2>News</h2>
+        <!-- Recent news: synced from news.html items with data-home (see js/home-sync.js) -->
+        <section class="section news">
+            <h2>Recent News</h2>
+            <ul id="home-news-list" class="news-list"></ul>
+            <noscript>
+                <p class="noscript-hint">Enable JavaScript to load featured news from the news page, or <a href="news.html">open the news archive</a>.</p>
+            </noscript>
+            <template id="home-news-fallback-tmpl">
+                <li class="news-item">
+                    <span class="news-date">Sep 2023</span>
+                    Our paper "<em>mmCLIP: Boosting mmWave-based Zero-shot HAR via Signal-Text Alignment</em>" was accepted by <b>SenSys 2024</b>.
+                </li>
+                <li class="news-item">
+                    <span class="news-date">Aug 2023</span>
+                    A first-author paper "<em>Towards Generalized mmWave-based Human Pose Estimation through Signal Augmentation</em>" was accepted by <b>MobiCom 2023</b>.
+                </li>
+                <li class="news-item">
+                    <span class="news-date">Aug 2023</span>
+                    Our Paper "<em>TileMask: A Passive-reflection-based Attack against mmWave Radar Object Detection in Autonomous Driving</em>" was accepted by <b>CCS 2023</b>.
+                </li>
+            </template>
+            <a href="news.html" class="section-more-link">View all news &rarr;</a>
+        </section>
 
-<ul>
-    <li>
-        09/29/23: [Publication] Our paper "<em>mmCLIP: Boosting mmWave-based Zero-shot HAR via Signal-Text Alignment</em>" was accepted by <b>SenSys 2024</b>.
-    </li>
-<li>
-        08/10/23: [Publication] A first-author paper "<em>Towards Generalized mmWave-based Human Pose Estimation through Signal Augmentation</em>" was accepted by <b>MobiCom 2023</b>.
-    </li>
-    <li>
-        08/08/23: [Publication] Our Paper "<em>TileMask: A Passive-reflection-based Attack against mmWave Radar Object Detection in Autonomous Driving</em>" was accepted by <b>CCS 2023</b>.
-    </li>
-    <li>
-        05/16/23: [Publication] Our paper "<em>Macular: a Multi-Task Adversarial Framework for Cross-Lingual Natural Language Understanding</em>" was accepted by <b>KDD 2023</b>.
-    </li>
-    <li>
-        10/15/22: [Publication] A first-author paper "<em>M<sup>4</sup>esh: mmWave-based 3D Human Mesh Construction for Multiple Subjects</em>" was accepted by <b>SenSys2022</b>.
-    </li>
-    <li>
-        06/20/22: [Publication] Our paper "<em> Fusing Global and Local Features for Generalized AI-Synthesized Image Detection</em> was accepted in <b> ICIP2022</b>".
-    </li>
-    <li>
-        05/25/21: [Paper Accepted] A first-author paper "<em>mmMesh: Towards 3D Real-Time Dynamic Human Mesh Construction Using Millimeter-wave</em>" was accepted in <b>MobiSys2021</b>.
-    </li> -->
-<!--     <li>
-        12/11/20: [Award] I got "<em>CSE PhD Best Research Award 2020</em>" in CSE department.
-    </li> -->
-<!--     <li>
-        09/23/20: [Paper Presentation] I presented paper "<em>Towards 3D Human Pose Construction Using WiFi</em>" on <b>MobiCom2020</b>.
-    </li> -->
-</ul>
+        <!-- Selected publications: synced from publications.html items with data-home (see js/home-sync.js) -->
+        <section class="section publications">
+            <h2>Selected Publications</h2>
+            <ul id="home-publications-list" class="publication-list"></ul>
+            <noscript>
+                <p class="noscript-hint">Enable JavaScript to load featured papers from the publications page, or <a href="publications.html">open the full list</a>.</p>
+            </noscript>
+            <template id="home-publications-fallback-tmpl">
+                <li class="publication-item">
+                    <div class="pub-head">
+                        <span class="pub-badge">ICCV'25</span>
+                        <div class="pub-meta">
+                            <span class="pub-accept-rate">Acceptance rate: 2698/11152=24.1%</span>
+                            <span class="pub-award"></span>
+                        </div>
+                    </div>
+                    <div class="pub-main">
+                        <span class="pub-title">mmCooper: A Multi-agent Multi-stage Communication-efficient and Collaboration-robust Cooperative Perception Framework</span>
+                        <span class="pub-authors">Bingyi Liu, Jian Teng, <b>Hongfei Xue</b>, Enshu Wang, Chuanhui Zhu, Pu Wang, Libing Wu</span>
+                    </div>
+                    <div class="pub-foot">
+                        <span class="pub-venue">Proceedings of the IEEE/CVF international conference on computer vision</span>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2501.12263" target="_blank">[Paper]</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-head">
+                        <span class="pub-badge">SenSys'25</span>
+                        <div class="pub-meta">
+                            <span class="pub-accept-rate">Acceptance rate: 46/245=18.7%</span>
+                            <span class="pub-award">🏆 Best Paper Award(1/245)</span>
+                        </div>
+                    </div>
+                    <div class="pub-main">
+                        <span class="pub-title">RAM-Hand: Robust Acoustic Multi-Hand Pose Reconstruction Using a Microphone Array</span>
+                        <span class="pub-authors">Shiyang Wang, Henglin Pu, Qiming Cao, Wenjun Jiang, Xingchen Wang, Tianci Liu, Zhengxin Jiang, <b>Hongfei Xue</b>, Lu Su</span>
+                    </div>
+                    <div class="pub-foot">
+                        <span class="pub-venue">Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems</span>
+                        <div class="pub-links">
+                            <a href="https://dl.acm.org/doi/pdf/10.1145/3715014.3722055" target="_blank">[Paper]</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-head">
+                        <span class="pub-badge">SenSys'25</span>
+                        <div class="pub-meta">
+                            <span class="pub-accept-rate">Acceptance rate: 46/245=18.7%</span>
+                            <span class="pub-award">🏆 Best Paper Honorable Mention(2/245)</span>
+                        </div>
+                    </div>
+                    <div class="pub-main">
+                        <span class="pub-title">Argus: Multi-View Egocentric Human Mesh Reconstruction Based on Stripped-Down Wearable mmWave Add-on</span>
+                        <span class="pub-authors">Di Duan, Shengzhe Lyu, Mu Yuan, <b>Hongfei Xue</b>, Tianxing Li, Weitao Xu, Kaishun Wu, Guoliang Xing</span>
+                    </div>
+                    <div class="pub-foot">
+                        <span class="pub-venue">Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems</span>
+                        <div class="pub-links">
+                            <a href="https://dl.acm.org/doi/pdf/10.1145/3715014.3722045" target="_blank">[Paper]</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-head">
+                        <span class="pub-badge">AAAI'25</span>
+                        <div class="pub-meta">
+                            <span class="pub-accept-rate">Acceptance rate: 3032/12957=23.4%</span>
+                            <span class="pub-award"></span>
+                        </div>
+                    </div>
+                    <div class="pub-main">
+                        <span class="pub-title">GenHMR: Generative Human Mesh Recovery</span>
+                        <span class="pub-authors">Muhammad Usama Saleem, Ekkasit Pinyoanuntapong, Pu Wang, <b>Hongfei Xue</b>, Srijan Das, Chen Chen</span>
+                    </div>
+                    <div class="pub-foot">
+                        <span class="pub-venue">The Thirty-Ninth AAAI Conference on Artificial Intelligence</span>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2412.14444" target="_blank">[Paper]</a>
+                            <a href="https://m-usamasaleem.github.io/publication/GenHMR/GenHMR.html" target="_blank">[Website]</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-head">
+                        <span class="pub-badge">BigData'24</span>
+                        <div class="pub-meta">
+                            <span class="pub-accept-rate"></span>
+                            <span class="pub-award">🏆 Best Undergraduate Paper Award</span>
+                        </div>
+                    </div>
+                    <div class="pub-main">
+                        <span class="pub-title">Towards Robust mmWave-based Human Activity Recognition using Large Simulated Dataset for Model Pretraining</span>
+                        <span class="pub-authors">Vinay Joshi, Shengkai Xu, Qiming Cao, Yi Zhu, Pu Wang, <b>Hongfei Xue</b></span>
+                    </div>
+                    <div class="pub-foot">
+                        <span class="pub-venue">2024 IEEE International Conference on Big Data</span>
+                        <div class="pub-links">
+                            <a href="./resource/24_BigData.pdf" target="_blank">[Paper]</a>
+                        </div>
+                    </div>
+                </li>
+            </template>
+            <a href="publications.html" class="btn btn-outline section-more-btn">View full publications list &rarr;</a>
+        </section>
 
-<h2>Publications</h2>
+    </div>
 
-<ul>
-    <li id='ICDCS'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[ICDCS'25]</b>
-            <b>Physical Backdoor Attacks against mmWave-based Human Activity Recognition</b>
-            <br>
-            Ziqian Bi, Amit Singha, <b>Hongfei Xue</b>, Tao Li, Yimin Chen, and Yanchao Zhang 
-            <br>
-            <em>IEEE International Conference on Distributed Computing Systems</em>
-        </font>
-    </li>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hongfei Xue. All rights reserved.</p>
+        <p class="footer-affiliation">Department of Computer Science, University of North Carolina at Charlotte</p>
+    </footer>
 
-    <p style="margin-top:1px"></p>
-
-    <li id='CVPR25'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[CVPR'25]</b>
-            <b>HOIGPT: Learning Long Sequence Hand-Object Interaction with Language Models</b>
-            <br>
-            Mingzhen Huang, Fu-Jen Chu, Bugra Tekin, Kevin J Liang, Haoyu Ma, Weiyao Wang, Xingyu Chen, Pierre Gleize, <b>Hongfei Xue</b>, Siwei Lyu, Kris Kitani, Matt Feiszli, Hao Tang 
-            <br>
-            <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='SenSys25_1'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[SenSys'25]</b>
-            <b>RAM-Hand: Robust Acoustic Multi-Hand Pose Reconstruction Using a Microphone Array</b>
-            [<a href="https://dl.acm.org/doi/pdf/10.1145/3715014.3722055" target="_blank">Paper</a>]
-            <br>
-            Shiyang Wang, Henglin Pu, Qiming Cao, Wenjun Jiang, Xingchen Wang, Tianci Liu, Zhengxin Jiang, <b>Hongfei Xue</b>, Lu Su
-            <br>
-            <em>Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems</em>
-            <br>
-            <b style="color:Tomato;">🏆 Best Paper Award (1/235)</b>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='SenSys25_2'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[SenSys'25]</b>
-            <b>Argus: Multi-View Egocentric Human Mesh Reconstruction Based on Stripped-Down Wearable mmWave Add-on</b>
-            [<a href="https://dl.acm.org/doi/pdf/10.1145/3715014.3722045" target="_blank">Paper</a>]
-            <br>
-            Di Duan, Shengzhe Lyu, Mu Yuan, <b>Hongfei Xue</b>, Tianxing Li, Weitao Xu, Kaishun Wu, Guoliang Xing
-            <br>
-            <em>Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems</em>
-            <br>
-            <b style="color:Tomato;">🏆 Best Paper Honorable Mention (2/235)</b>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='AAAI25'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[AAAI'25]</b>
-            <b>GenHMR: Generative Human Mesh Recovery</b>
-            [<a href="https://arxiv.org/pdf/2412.14444" target="_blank">Paper</a>]
-            [<a href="https://m-usamasaleem.github.io/publication/GenHMR/GenHMR.html" target="_blank">Website</a>]
-            <br>
-            Muhammad Usama Saleem, Ekkasit Pinyoanuntapong, Pu Wang, <b>Hongfei Xue</b>, Srijan Das, Chen Chen
-            <br>
-            <em>The Thirty-Ninth AAAI Conference on Artificial Intelligence</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='WACV25'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[WACV'25]</b>
-            <b>BioPose: Biomechanically-accurate 3D Pose Estimation from Monocular Videos</b>
-            [<a href="https://arxiv.org/pdf/2501.07800" target="_blank">Paper</a>]
-            [<a href="https://m-usamasaleem.github.io/publication/BioPose/BioPose.html" target="_blank">Website</a>]
-            <br>
-            Farnoosh Koleini, Muhammad Usama Saleem, Pu Wang, <b>Hongfei Xue</b>, Ahmed Helmy, and Abbey Fenwick
-            <br>
-            <em>IEEE/CVF Winter Conference on Applications of Computer Vision</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='BigData24'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[BigData'24]</b>
-            <b>Towards Robust mmWave-based Human Activity Recognition using Large Simulated Dataset for Model Pretraining</b>
-            [<a href="./resource/24_BigData.pdf" target="_blank">Paper</a>]
-            <br>
-            Vinay Joshi (Undergraduate Student), Shengkai Xu, Qiming Cao, Yi Zhu, Pu Wang, <b>Hongfei Xue</b>
-            <br>
-            <em>2024 IEEE International Conference on Big Data</em>
-            <br>
-            <b style="color:Tomato;">🏆 Best Undergraduate Paper Award</b>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='SenSys24'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[SenSys'24]</b>
-            <b>mmCLIP: Boosting mmWave-based Zero-shot HAR via Signal-Text Alignment</b>
-            [<a href="./resource/24_SenSys.pdf" target="_blank">Paper</a>]
-            [<a href="https://github.com/QM20/mmCLIP" target="_blank">GitHub</a>]
-            [<a href="https://purdue0-my.sharepoint.com/:f:/g/personal/cao393_purdue_edu/ElON7JfgsTRMuzxap8Kv6j4B4qeGC2qTndGjOvX5FJEdBw?e=ILTOFv" target="_blank">Dataset</a>]
-            <br>
-            Qiming Cao, <b>Hongfei Xue</b>, Tianci Liu, Xingchen Wang, Haoyu Wang, Xincheng Zhang, Lu Su
-            <br>
-            <em>Proceedings of the 22nd ACM Conference on Embedded Networked Sensor Systems</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='TOSN24'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[TOSN'24]</b>
-            <b>Towards Smartphone-based 3D Hand Pose Reconstruction Using Acoustic Signals</b>
-            [<a href="./resource/24_TOSN.pdf" target="_blank">Paper</a>]
-            <br>
-            Shiyang Wang, Xingchen Wang, Wenjun Jiang, Chenglin Miao, Qiming Cao, Haoyu Wang, Ke Sun, <b>Hongfei Xue</b>, Lu Su
-            <br>
-            <em>ACM Transactions on Sensor Networks</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='MobiCom24'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[MobiCom'24]</b>
-            <b>Malicious Attacks against Multi-Sensor Fusion in Autonomous Driving</b>
-            [<a href="./resource/24_MobiCom.pdf" target="_blank">Paper</a>]
-            <br>
-            Yi Zhu, Chenglin Miao, <b>Hongfei Xue</b>, Yunnan Yu, Lu Su, Chunming Qiao<br>
-            <em>Proceedings of the 30th Annual International Conference on Mobile Computing and Networking</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='MobiCom23'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[MobiCom'23]</b>
-            <b>Towards Generalized mmWave-based Human Pose Estimation through Signal Augmentation</b>
-            [<a href="./resource/23_MobiCom.pdf" target="_blank">Paper</a>]
-            <br>
-            <b>Hongfei Xue</b>, Qiming Cao, Chenglin Miao, Yan Ju, Haochen Hu, Aidong Zhang, Lu Su
-            <br>
-            <em>Proceedings of the 29th Annual International Conference on Mobile Computing and Networking</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='CCS23'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[CCS'23]</b>
-            <b>TileMask: A Passive-reflection-based Attack against mmWave Radar Object Detection in Autonomous Driving</b>
-            [<a href="./resource/23_CCS.pdf" target="_blank">Paper</a>]
-            <br>
-            Yi Zhu, Chenglin Miao, <b>Hongfei Xue</b>, Zhengxiong Li, Yunnan Yu, Wenyao Xu, Lu Su, and Chunming Qiao
-            <br>
-            <em>Proceedings of the 30th ACM Conference on Computer and Communications Security</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='KDD23'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[KDD'23]</b>
-            <b>Macular: a Multi-Task Adversarial Framework for Cross-Lingual Natural Language Understanding</b>
-            [<a href="./resource/23_KDD.pdf" target="_blank">Paper</a>]
-            <br>
-            Haoyu Wang, Yaqing Wang, Feijie Wu, <b>Hongfei Xue</b>, Jing Gao
-            <br>
-            <em>Proceedings of the 29th SIGKDD Conference on Knowledge Discovery and Data Mining</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='SenSys22'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[SenSys'22]</b>
-            <b>M<sup>4</sup>esh: mmWave-based 3D Human Mesh Construction for Multiple Subjects</b>
-            [<a href="./resource/22_SenSys.pdf" target="_blank">Paper</a>]
-            <br>
-            <b>Hongfei Xue*</b>, Qiming Cao*, Yan Ju, Haochen Hu, Haoyu Wang, Aidong Zhang, Lu Su
-            <br>
-            (*: Equal contributions)
-            <br>
-            <em>Proceedings of the 20th ACM Conference on Embedded Networked Sensor System</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='ICIP22'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[ICIP'22]</b>
-            <b>Fusing Global and Local Features for Generalized AI-Synthesized Image Detection</b>
-            [<a href="./resource/22_ICIP.pdf" target="_blank">Paper</a>]
-            [<a href="https://github.com/littlejuyan/FusingGlobalandLocal" target="_blank">Code</a>]
-            <br>
-            Yan Ju, Shan Jia, Lipeng Ke, <b>Hongfei Xue</b>, Koki Nagano, Siwei Lyu
-            <br>
-            <em>The 29th IEEE International Conference on Image Processing</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='MobiSys21'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[MobiSys'21]</b>
-            <b>mmMesh: Towards 3D Real-Time Dynamic Human Mesh Construction Using Millimeter-wave</b>
-            [<a href="./resource/21_MobiSys.pdf" target="_blank">Paper</a>]
-            [<a href="https://www.youtube.com/watch?v=xW4ZlmxEu9Q" target="_blank">Real-time Demo</a>]
-            [<a href="https://youtu.be/zEAKmNc-0MY" target="_blank">Presentation Video</a>]
-            [<a href="https://havocfixer.github.io/mmMesh/" target="_blank">Project Site</a>]
-            <br>
-            <b>Hongfei Xue</b>, Yan Ju, Chenglin Miao, Yijiang Wang, Shiyang Wang, Aidong Zhang, Lu Su
-            <br>
-            <em>Proceedings of the 19th ACM International Conference on Mobile Systems, Applications, and Services</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='MobiCom20'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[MobiCom'20]</b>
-            <b>Towards 3D Human Pose Construction Using WiFi</b>
-            [<a href="./resource/20_MobiCom.pdf" target="_blank">Paper</a>]
-            [<a href="https://www.youtube.com/watch?v=puU4EvBTPxA&feature=youtu.be" target="_blank">Demo Video</a>]
-            [<a href="https://www.youtube.com/watch?v=0lOSA1piKjQ&feature=youtu.be" target="_blank">Short Presentation Video</a>]
-            [<a href="https://www.youtube.com/watch?v=WoCMlDM2NiE&feature=youtu.be" target="_blank">Full Presentation Video</a>]
-            [<a href="https://www.dropbox.com/s/r52zcgtkvw7l0xd/WiPose.pptx?dl=0" target="_blank">Full Slides</a>]
-            <br>
-            Wenjun Jiang*, <b>Hongfei Xue*</b>, Chenglin Miao, Shiyang Wang, Sen Lin, Chong Tian, Srinivasan Murali, Haochen Hu, Zhi Sun, Lu Su
-            <br>
-            (*: Equal contributions)
-            <br>
-            <em>Proceedings of the 26th Annual International Conference on Mobile Computing and Networking</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='UbiComp20'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[UbiComp'20]</b>
-            <b>DeepMV: Multi-View Deep Learning for Device-Free Human Activity Recognition</b>
-            [<a href="./resource/20_UbiComp.pdf" target="_blank">Paper</a>]
-            [<a href="https://www.youtube.com/watch?v=ePpuq0sAXHk&list=PLqhXYFYmZ-Veo919JzizD4ZAAQEDxfIwi&index=4" target="_blank">Full Presentation Video</a>]
-            <br>
-            <b>Hongfei Xue*</b>, Wenjun Jiang*, Chenglin Miao, Fenglong Ma, Shiyang Wang, Ye Yuan, Shuochao Yao, Aidong Zhang, Lu Su
-            <br>
-            (*: Equal contributions)<br>
-            <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologiesg</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='IJCAI19_1'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[IJCAI'19]</b>
-            <b>Deep Metric Learning: The Generalization Analysis and an Adaptive Algorithm</b>    
-            [<a href="./resource/19_IJCAI_1.pdf" target="_blank">Paper</a>]
-            <br>
-            Mengdi Huai, <b>Hongfei Xue</b>, Chenglin Miao, Liuyi Yao, Lu Su, Changyou Chen, Aidong Zhang
-            <br>
-            <em>Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence Main track</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='IJCAI19_2'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[IJCAI'19]</b>
-            <b>On the Estimation of Treatment Effect with Text Covariates</b>    
-            [<a href="./resource/19_IJCAI_2.pdf" target="_blank">Paper</a>]
-            <br>
-            Liuyi Yao, Sheng Li, Yaliang Li, <b>Hongfei Xue</b>, Jing Gao, Aidong Zhang
-            <br>
-            <em>Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence Main track</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='MobiHoc19'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[MobiHoc'19]</b>
-            <b>DeepFusion: A Deep Learning Framework for the Fusion of Heterogeneous Sensory Data</b>
-            [<a href="./resource/19_MobiHoc.pdf" target="_blank">Paper</a>]
-            <br>
-            <b>Hongfei Xue</b>, Wenjun Jiang, Chenglin Miao, Ye Yuan, Fenglong Ma, Xin Ma, Yijiang Wang, Shuochao Yao, Wenyao Xu, Aidong Zhang, Lu Su
-            <br>
-            <em>Proceedings of the Twentieth ACM International Symposium on Mobile Ad Hoc Networking and Computing</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='MobiCom18'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[MobiCom'18]</b>
-            <b>Towards Environment Independent Device Free Human Activity Recognition</b>
-            [<a href="./resource/18_MobiCom.pdf" target="_blank">Paper</a>]
-            <br>
-            Wenjun Jiang, Chenglin Miao, Fenglong Ma, Shuochao Yao, Yaqing Wang, Ye Yuan, <b>Hongfei Xue</b>, Chen Song, Xin Ma, Dimitrios Koutsonikolas, Wenyao Xu, Lu Su
-            <br>
-            <em>Proceedings of the 24th Annual International Conference on Mobile Computing and Networking</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='BHI18'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[BHI'18]</b>
-            <b>A novel channel-aware attention framework for multi-channel EEG seizure detection via multi-view deep learning</b>
-            [<a href="./resource/18_BHI.pdf" target="_blank">Paper</a>]
-            <br>
-            Ye Yuan, Guangxu Xun, Fenglong Ma, Qiuling Suo, <b>Hongfei Xue</b>, Kebin Jia, Aidong Zhang
-            <br>
-            <em>2018 IEEE EMBS International Conference on Biomedical & Health Informatics</em>
-        </font>
-    </li>
-
-    <p style="margin-top:1px"></p>
-
-    <li id='BCB16'>
-        <font size="3.5" face="times new roman, serif">
-            <b style="color:DodgerBlue;">[BCB'16]</b>
-            <b>Risk Factor Analysis Based on Deep Learning Model</b>
-            [<a href="./resource/16_BCB.pdf" target="_blank">Paper</a>]
-            <br>
-            Qiuling Suo, <b>Hongfei Xue</b>, Jing Gao, Aidong Zhang
-            <br>
-            <em>Proceedings of the 7th ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics</em>
-        </font>
-    </li>
-</ul>
-
-<h2>Teaching Experiences</h2>
-    I was lecturer for the following courses at UNCC:
-    <ul>
-        <li>
-            ITCS 3156: Introduction to Machine Learning (Spring 2025)
-        </li>
-        <li>
-            ITCS 6156/8156: Machine Learning (Fall 2024)
-        </li>
-        <li>
-            ITCS 6156/8156: Machine Learning (Spring 2024)
-        </li>
-        <li>
-            ITCS 6156/8156: Machine Learning (Fall 2023)
-        </li>
-    </ul>
-    <br>
-    I served as a teaching assistant for the following courses at UB:
-    <ul>
-        <li>
-            CSE 489/589: Modern Network Concepts (Fall 2021, Spring 2023)
-        </li>
-<!--         <li>
-            CSE 489/589: Modern Network Concepts (Fall 2021)
-        </li> -->
-        <li>
-            CSE 250: Data Structures (Spring 2019)
-        </li>
-        <li>
-            CSE 474/574: Introduction to Machine Learning (Spring 2018, Fall 2018)
-        </li>
-<!--         <li>
-            CSE 474/574: Introduction to Machine Learning (Spring 2018)
-        </li> -->
-        <li>
-            CSE 601: Data Mining and Bioinformatics (Fall 2017)
-        </li>
-        <li>
-            CSE 113: Introduction to Computer Science (Spring 2016)
-        </li>
-        <li>
-            CSE 435/535: Introduction to Information Retrieval (Fall 2015)
-        </li>
-    </ul>
-
-<h2>Awards</h2>
-
-<ul>
-    <li>
-        <em>Best PhD Thesis Award 2023</em>, Dec. 2023
-    </li>
-    <li>
-        <em>CSE PhD Best Research Award 2020</em>, Dec. 2020
-    </li>
-</ul>
- 
- <!-- Default Statcounter code for HavocFiXer's Homepage
-https://havocfixer.github.io/ -->
-<h2></h2>
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=-QLlncALnt2EWaSyIibSk4i5tKj8ZMVQuyBoOZECzFs&co=2d78ad&cmo=ba9007&cmn=bc0000&ct=ffffff'></script>
-
-</div>
+    <script src="js/site.js"></script>
+    <script src="js/home-sync.js"></script>
 </body>
 </html>
